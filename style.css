@@ -313,9 +313,7 @@
 		font-size:20px;
 		width:30%;
 		display:block;	
-		background-color:transparent;
-		border-radius:none;
-		border:none;
+	
 	}
 	.footerlink-list{
 		color:white;
@@ -329,6 +327,9 @@
 		transform:scale(1.2);
 		padding-bottom:4px;
 		border-bottom:4px solid #EA6E06;
+		background-color:transparent;
+		border-radius:none;
+		border:none;
 		
 	}
 
