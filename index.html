@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- Theme by R.Kopiga http://www.palaijaffna.com -->
+<html lang="en">
+<head>
+<title>Palai.com</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Stylesheet & Favicon -->
+	<link rel="stylesheet" type="text/css" href="reset.css"/>
+	<link rel="stylesheet" type="text/css" href="stylerwd1.css"/>
+	<link rel="stylesheet" type="text/css" href="stylerwd2.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script type="text/javascript">
+		var slideimages = new Array() // create new array to preload images
+		slideimages[0] = new Image() // create new instance of image object
+		slideimages[0].src = "img/slide4.jpg" // set image src property to image path, preloading image in the process
+		slideimages[1] = new Image()
+		slideimages[1].src = "img/slide3.jpg"
+		slideimages[2] = new Image()
+		slideimages[2].src = "img/event2.jpg"
+	</script>
+</head>
+<body>
+<!--Facebook link code-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="main-container clearfix">
+	<!--Header Section-->
+	<div class="header clearfix">
+		<div id="logo"></div>
+		<!--Navigation Section-->
+		<div id="navigation" >
+			<ul class="nav-link">
+				<li class=" nav-link-item active"><a href="index.html" class=" nav-link-list">Home</a></li>
+				<li class=" nav-link-item"><a href="aboutus.html" class=" nav-link-list" >About Us</a></li>
+				<li class=" nav-link-item"><a href="news-link.html" class=" nav-link-list" >News</a></li>
+				<li class=" nav-link-item"><a href="services.html" class=" nav-link-list" >Services</a></li>
+				<li class=" nav-link-item"><a href="development.html" class=" nav-link-list" >Development</a></li>
+				<li class=" nav-link-item"><a href="contact.html" class=" nav-link-list" >Contact</a></li>
+			</ul>
+		</div>
+	</div>	
+	<!--Slideshow Section-->
+	<div class="slideshow"><img src="img/slide4" alt="slide-image" id="slide" class="slideshow-img"/>
+	<script type="text/javascript">
+		//variable that will increment through the images
+		var step=0
+		
+		function slideit(){
+		 //if browser does not support the image object, exit.
+		 if (!document.images)
+		  return
+		 document.getElementById('slide').src = slideimages[step].src
+		 
+		 if (step<2)
+		  step++
+		 else
+		  step=0
+		 //call function "slideit()" every 2.5 seconds
+		 setTimeout("slideit()",2500)
+		}
+		slideit()
+	</script>
+	</div>	
+	<!--Main Content Section-->
+	<div class="content-wrapper clearfix">
+		<div class="main-content-wrapper clearfix">
+			<div class="content-topic clearfix">
+				<div class="topic">
+				<div class="topic-heading"><h1><a href="news-hl.html" class="topic-heading-link">NEWS</a></h1></div>
+				<div class="topic-img"><a href="news-hl.html"><img src="img/fishermen-newshl.jpg" alt="news" class="img-size"/></a></div>
+				</div>
+				<div class="topic" >
+				<div class="topic-heading"><h1><a href="event-hl.html" class="topic-heading-link">EVENTS</a></h1></div>
+				<div class="topic-img"><a href="event-hl.html"><img src="img/maldives-eventhl.jpg" alt="events" class="img-size"/></a></div>
+				</div>
+			</div>	
+			<div class="sub-content clearfix">
+				<div class="content-news clearfix">
+					<div class="news">
+						<div class="news-img"><a href="news1.html"><img src="img/arrest-news1.png" alt="news1" class="img-size"/></a></div>
+						<div class="news-title"><a href="news1.html" class="news-title-link">The nine suspects in the rape and murder of Sivaloganathan Vidya in Pungudutivu, Jaffna, were further remanded...</a></div>
+					</div>
+					<div class="news">
+						<div class="news-img"><a href="news2.html"><img src="img/police-news2.jpg" alt="news2" class="img-size"/></a></div>
+						<div class="news-title"><a href="news2.html" class="news-title-link">A special police programme is underway to crack down on crime in the Jaffna peninsula...</a></div>
+					</div>
+					<div class="news">
+						<div class="news-img"><a href="news3.html"><img src="img/train-news3.jpg" alt="news3" class="img-size"/></a></div>
+						<div class="news-title"><a href="news3.html" class="news-title-link">A compartment of the Uttara Devi express train from Kankesanthurai to Colombo derailed on Friday morning...</a></div>
+					</div>
+					<div class="news">
+						<div class="news-img"><a href="news4.html"><img src="img/investigation-news4.jpg" alt="news4" class="img-size"/></a></div>
+						<div class="news-title"><a href="news4.html" class="news-title-link">Police say that extensive investigations have commenced into the discovery of a suicide vest and other explosives from a house which comes...</a></div>
+					</div>
+					</div>
+						
+				
+				<div class="content-events clearfix">
+					<div class="events">
+						<div class="events-img"><a href="event1.html"><img src="img/sweden-event1.jpg" alt="event1" class="img-size"/></a></div>
+						<div class="events-title"><a href="event1.html" class="events-title-link">The foreign minister of Sweden and the panel of diplomats paid a visit to Jaffna in order to study...</a></div>
+					</div>
+					<div class="events">
+						<div class="events-img"><a href="event2.html"><img src="img/planting-event2.jpg" alt="event2" class="img-size"/></a></div>
+						<div class="events-title"><a href="event2.html" class="events-title-link">This Programme was presided by Mr.N.Vethanayagan, Government Agent and the officers of the District Secretariat...</a></div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="side-content content-border clearfix">
+			<div class="facebook">
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPalaiJaffna%2F&tabs=timeline&width=325&height=245&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" >
+				</iframe>
+			</div>
+			<div class="side-conetent-box clearfix">
+				<div class="side-img" ><img src="img/needy-people-1.jpg" alt="needy people" class="img-size"/></div>
+				<div class="side-title"><h4>Help wanted people's title</h4></div>
+				<div class="side-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+				<div class="more-button"><a href="helpwanted.html"><img src="img/read-more-button.png" alt="more button" class="img-size"/></a></div>
+			</div>
+			<div class="side-conetent-box clearfix">
+				<div class="side-img" ><img src="img/donators2.jpg" alt="donators" class="img-size"/></div>
+				<div class="side-title"><h4>Donators</h4></div>
+				<div class="side-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+				<div class="more-button"><a href="donators.html"><img src="img/view-more-button.png" alt="more button" class="img-size"/></a></div>
+			</div>
+		</div>		
+	</div>
+	<!--Footer Section-->
+	<div class="footer clearfix">
+		<div class="footer-copyright clearfix">© 2016 palaijaffna.com</div>
+		<div class="footer-link">
+			<ul>
+			  <li class="footerlink-item"><a href="post-news.html"  class="footerlink-list">How to post news here</a></li>
+			  <li class="footerlink-item"><a href="sitemap.html" class="footerlink-list">Site map</a></li>
+			  <li class="footerlink-item"><a href="contact.html" class="footerlink-list">Send message</a></li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
